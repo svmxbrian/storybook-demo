@@ -1,0 +1,35 @@
+{
+  "name": "storybook",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@storybook/addon-info": "^3.2.13",
+    "@storybook/react": "^3.2.13",
+    "@svmx/ui-components-predix": "^0.1.30",
+    "classnames": "^2.2.5",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-mock-store": "^1.2.3",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "@svmx/react-scripts": "1.1.43"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "NODE_ENV=development eslint js test *.js",
+    "prettier": "NODE_ENV=development prettier-eslint --write \"src/**/*.js\"",
+    "tree": "react-scripts tree",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  }
+}
